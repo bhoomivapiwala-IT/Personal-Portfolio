@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #151c32;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #00d9ff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00d9ff;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.home-content {
+    max-width: 650px;
+}
+
+.home h1 {
+    font-size: 55px;
+    color: #00d9ff;
+    margin: 15px 0;
+}
+
+.home h2 {
+    margin-bottom: 20px;
+}
+
+.home p,
+.page p {
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #00d9ff;
+    color: #0b1020;
+    padding: 12px 22px;
+    margin: 15px 8px 0 0;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.page {
+    padding: 70px 10%;
+    min-height: 85vh;
+}
+
+.page h1 {
+    color: #00d9ff;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.page h2 {
+    margin-top: 25px;
+}
+
+.skills-container,
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.skill,
+.project {
+    background: #151c32;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill:hover,
+.project:hover {
+    transform: translateY(-5px);
+    background: #202d4d;
+}
+
+form {
+    max-width: 500px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h1 {
+        font-size: 38px;
+    }
+
+    .page {
+        padding: 40px 6%;
+    }
+}
